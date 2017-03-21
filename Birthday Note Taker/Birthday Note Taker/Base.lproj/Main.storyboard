@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Birthday_Note_Taker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday Note Taker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZb-GO-lPK">
+                                <rect key="frame" x="111" y="28" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zh-04-AfZ">
+                                <rect key="frame" x="55" y="93" width="264" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soS-Nb-Mgg">
+                                <rect key="frame" x="55" y="161" width="264" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stored Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMY-7S-a3S">
+                                <rect key="frame" x="55" y="243" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stored Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0o-JC-CuQ">
+                                <rect key="frame" x="55" y="308" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcf-Qg-8MC">
+                                <rect key="frame" x="274" y="367" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saf-sY-8dM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdk-Zg-PEP">
+                                <rect key="frame" x="55" y="367" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i54-Br-7mp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FZb-GO-lPK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ao-wM-7Cd"/>
+                            <constraint firstItem="J0o-JC-CuQ" firstAttribute="top" secondItem="HMY-7S-a3S" secondAttribute="bottom" constant="44" id="5YW-4O-WWc"/>
+                            <constraint firstItem="FZb-GO-lPK" firstAttribute="centerX" secondItem="0zh-04-AfZ" secondAttribute="centerX" id="8bz-F6-zep"/>
+                            <constraint firstItem="0zh-04-AfZ" firstAttribute="trailing" secondItem="soS-Nb-Mgg" secondAttribute="trailing" id="Avq-C2-3sP"/>
+                            <constraint firstItem="Gdk-Zg-PEP" firstAttribute="top" secondItem="J0o-JC-CuQ" secondAttribute="bottom" constant="38" id="BmV-RB-ou3"/>
+                            <constraint firstItem="0zh-04-AfZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="IDK-bI-tVQ"/>
+                            <constraint firstItem="Gdk-Zg-PEP" firstAttribute="baseline" secondItem="Tcf-Qg-8MC" secondAttribute="baseline" id="Ikt-Yn-9rf"/>
+                            <constraint firstItem="HMY-7S-a3S" firstAttribute="top" secondItem="soS-Nb-Mgg" secondAttribute="bottom" constant="52" id="J9d-Ce-Noq"/>
+                            <constraint firstItem="HMY-7S-a3S" firstAttribute="leading" secondItem="J0o-JC-CuQ" secondAttribute="leading" id="Jgl-hk-qlo"/>
+                            <constraint firstItem="HMY-7S-a3S" firstAttribute="trailing" secondItem="J0o-JC-CuQ" secondAttribute="trailing" id="Jzp-Jj-bLF"/>
+                            <constraint firstItem="soS-Nb-Mgg" firstAttribute="top" secondItem="0zh-04-AfZ" secondAttribute="bottom" constant="38" id="KNa-JZ-BMj"/>
+                            <constraint firstItem="FZb-GO-lPK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Lzb-59-jzs"/>
+                            <constraint firstItem="J0o-JC-CuQ" firstAttribute="trailing" secondItem="Tcf-Qg-8MC" secondAttribute="trailing" id="OBB-S7-v4I"/>
+                            <constraint firstItem="soS-Nb-Mgg" firstAttribute="leading" secondItem="HMY-7S-a3S" secondAttribute="leading" id="Ov1-Qt-I9y"/>
+                            <constraint firstItem="0zh-04-AfZ" firstAttribute="leading" secondItem="soS-Nb-Mgg" secondAttribute="leading" id="RFv-OP-3Qd"/>
+                            <constraint firstItem="soS-Nb-Mgg" firstAttribute="trailing" secondItem="HMY-7S-a3S" secondAttribute="trailing" id="y20-53-maX"/>
+                            <constraint firstItem="0zh-04-AfZ" firstAttribute="top" secondItem="FZb-GO-lPK" secondAttribute="bottom" constant="44" id="yMh-gr-amt"/>
+                            <constraint firstItem="J0o-JC-CuQ" firstAttribute="leading" secondItem="Gdk-Zg-PEP" secondAttribute="leading" id="z6e-Qz-ifi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayText" destination="soS-Nb-Mgg" id="5xR-7u-0hr"/>
+                        <outlet property="nameText" destination="0zh-04-AfZ" id="2ju-hu-qmn"/>
+                        <outlet property="storedDateLabel" destination="J0o-JC-CuQ" id="oxH-mo-fd7"/>
+                        <outlet property="storedNameLabel" destination="HMY-7S-a3S" id="rG9-si-3kO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
